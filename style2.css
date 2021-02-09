@@ -4,27 +4,27 @@ body {
 header {
   width: 100%;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 730px) {
 .header-logo-pc {
   display: none;
 }
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 730px) {
 .header-logo-sp {
   display: none;
 }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 730px) {
 .top-content {
   display: none;
 }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 730px) {
 .hamburger-menu {
   display: none;
 }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 730px) {
 header {
   position: fixed;
   top: 0;
@@ -682,13 +682,14 @@ img {
     padding-bottom: 120px;
     position: relative;
 }
-
+@media screen and (min-width: 730px) {
 .pick-up-contents > .content-width {
     background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/bg-section-top-course.png);
     background-size: 281px 275px;
     background-repeat: no-repeat;
     background-position: calc(100% - 50px) top;
     padding-top: 35px;
+}
 }
 .contents-tidy3 {
     display: flex;
@@ -714,7 +715,24 @@ img {
     background-color: #f6f6f6;
 }
 }
-
+@media screen and (max-width: 730px) {
+.main-section.pick-up-contents::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 70%;
+    display: block;
+    width: 281px;
+    height: 275px;
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/bg-section-top-course.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 40px;
+    left: 60%;
+    width: 130px;
+    height: 130px;
+}
+}
 @media screen and (max-width: 730px) {
 .main-section.pick-up-contents {
     padding-top: 55px;
